@@ -12,7 +12,7 @@ Note: We plan to remove all proprietary branding from this fork of Pale Moon so 
 ## Changes to Pale Moon:
 * Branding (obviously in progress)
 * Restore dual GUID system/Firefox addons support
-* Restore FUEL (part of restoring Firefox addons)
+* Revert FUEL removal (this actually was reverted upstream. When they finally do remove it we won't be pulling in that change)
 
 ## Credits:
 * MoonchildProductions for the wonderful Pale Moon Browser and UXP platform.
