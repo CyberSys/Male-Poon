@@ -1,3 +1,5 @@
+![Male Poon Logo](branding/malepoon_logo.jpg)
+
 # Male Poon web browser
 
 This is the source code for the Male Poon web browser, a nice poon browser derived from MoonchildProductions' Pale Moon/UXP code. The source tree is
