@@ -9,7 +9,12 @@ The shared Unified XUL Platform-Fixed source code is referenced here as a git su
 
 Note: We plan to remove all proprietary branding from this fork of Pale Moon so as not to violate any copyrights imposed by Moonchild Productions. This will be done in the near future.
 
-Credits:
+## Changes to Pale Moon:
+* Branding (obviously in progress)
+* Restore dual GUID system/Firefox addons support
+* Restore FUEL (part of restoring Firefox addons)
+
+## Credits:
 * MoonchildProductions for the wonderful Pale Moon Browser and UXP platform.
 * Credits also go to Pale Moon and UXP contributors for the same as above.
 * Palemoon.org forum users for continuing to report my profile. GitHub support has notified me that they will take note of the abuse of the GitHub reports feature and will act accordingly.
