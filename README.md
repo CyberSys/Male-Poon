@@ -5,6 +5,14 @@ laid out in a "comm-central" style configuration where only the code specific to
 
 The shared Unified XUL Platform-Fixed source code is referenced here as a git submodule contained in the `platform/` directory and is required to build the application.
 
+Note: We plan to remove all proprietary branding from this fork of Pale Moon so as not to violate any copyrights imposed by Moonchild Productions. This will be done in the near future.
+
+Credits:
+* MoonchildProductions for the wonderful Pale Moon Browser and UXP platform.
+* Credits also go to Pale Moon and UXP contributors for the same as above.
+* Palemoon.org forum users for continuing to report my profile. GitHub support has notified me that they will take note of the abuse of the GitHub reports feature and will act accordingly.
+* mattatobin for continuing to complain about GitHub forks he doesn't like.
+
 ## Getting the platform sub-module
 `git submodule init && git submodule update`
 
