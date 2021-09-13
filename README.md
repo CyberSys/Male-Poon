@@ -12,7 +12,7 @@ Note: We plan to remove all proprietary branding from this fork of Pale Moon so 
 ## Changes to Pale Moon:
 * Branding (obviously in progress)
 * Restore dual GUID system/Firefox addons support
-* Revert FUEL removal (this actually was reverted upstream. When they finally do remove it we won't be pulling in that change)
+* Revert removal of ability to set extension update background URL (in case someone else starts their own addon site)
 
 ## Credits:
 * MoonchildProductions for the wonderful Pale Moon Browser and UXP platform.
