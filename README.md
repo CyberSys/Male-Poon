@@ -14,6 +14,10 @@ Note: We plan to remove all proprietary branding from this fork of Pale Moon so 
 * Restore dual GUID system/Firefox addons support
 * Revert removal of ability to set extension update background URL (in case someone else starts their own addon site)
 
+## FAQ
+* Doesn't this violate Moonchild Productions' branding and copyrights?
+    * No. Moonchild Productions owns (but has not legally registered) the copyright for Moonchild Productions and Pale Moon. He does not own the copyright for Male Poon, nor the copyright for ManchildProductions. On the Pale Moon forum Tobin claims that the blood moon logo cannot be used, even in goatse form. I am not using the blood moon logo from the Pale Moon repo. I am using a different picture of a blood moon pulled off of Google Images that is completely unrelated to their blood moon logo/branding. The font they used for the Pale Moon logo allows free commercial use. As such, I am not in violation of any branding. I'd be happy to take them to court to prove otherwise. I have the time and money to do so.
+
 ## Credits:
 * MoonchildProductions for the wonderful Pale Moon Browser and UXP platform.
 * Credits also go to Pale Moon and UXP contributors for the same as above.
