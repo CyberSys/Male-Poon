@@ -1468,10 +1468,10 @@ BrowserGlue.prototype = {
     }
 
     if (currentUIVersion < 16) {
-      // Migrate Sync from pmsync.palemoon.net to pmsync.palemoon.org
+      // Migrate Sync from pmsync.malepoon.net to pmsync.malepoon.org
       try {
         let syncURL = Services.prefs.getCharPref("services.sync.clusterURL");
-        let newSyncURL = syncURL.replace(/pmsync\.palemoon\.net/i,"pmsync.palemoon.org");
+        let newSyncURL = syncURL.replace(/pmsync\.malepoon\.net/i,"pmsync.malepoon.org");
         if (newSyncURL != syncURL) {
           Services.prefs.setCharPref("services.sync.clusterURL", newSyncURL);
         }

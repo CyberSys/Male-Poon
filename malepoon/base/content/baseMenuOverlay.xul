@@ -27,7 +27,7 @@
 #endif
       <menupopup id="menu_HelpPopup" onpopupshowing="buildHelpMenu();">
         <menuitem id="menu_openHelp"
-                  oncommand="openHelpLink('pale-moon-help')"
+                  oncommand="openHelpLink('male-poon-help')"
                   onclick="checkForMiddleClick(this, event);"
                   label="&productHelp.label;"
                   accesskey="&productHelp.accesskey;"

@@ -9,7 +9,7 @@
  */
 var FeedHandler = {
 
-  /* Pale Moon: Address Bar: Feeds 
+  /* Male Poon: Address Bar: Feeds 
    * The click handler for the Feed icon in the location bar. Opens the
    * subscription page if user is not given a choice of feeds.
    * (Otherwise the list of available feeds will be presented to the

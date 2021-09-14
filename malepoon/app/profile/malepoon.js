@@ -35,7 +35,7 @@ pref("extensions.strictCompatibility", false);
 // for it to be compatible by default.
 pref("extensions.minCompatibleAppVersion", "1.5");
 
-#define AM_DOMAIN addons.palemoon.org
+#define AM_DOMAIN addons.malepoon.org
 #define AM_AUS_ARGS reqVersion=%REQ_VERSION%&id=%ITEM_ID%&version=%ITEM_VERSION%&maxAppVersion=%ITEM_MAXAPPVERSION%&status=%ITEM_STATUS%&appID=%APP_ID%&appVersion=%APP_VERSION%&appOS=%APP_OS%&appABI=%APP_ABI%&locale=%APP_LOCALE%&currentAppVersion=%CURRENT_APP_VERSION%&updateType=%UPDATE_TYPE%&compatMode=%COMPATIBILITY_MODE%
 
 // Preferences for AMO integration
@@ -57,9 +57,9 @@ pref("extensions.blocklist.level.updated", false);
 // Controls what level the blocklist switches from warning about items to forcibly
 // blocking them.
 pref("extensions.blocklist.level", 1);
-pref("extensions.blocklist.url", "https://blocklist.palemoon.org/?version=%VERSION%");
-pref("extensions.blocklist.detailsURL", "https://blocklist.palemoon.org/about.shtml");
-pref("extensions.blocklist.itemURL", "https://blocklist.palemoon.org/info/?id=%blockID%");
+pref("extensions.blocklist.url", "https://blocklist.malepoon.org/?version=%VERSION%");
+pref("extensions.blocklist.detailsURL", "https://blocklist.malepoon.org/about.shtml");
+pref("extensions.blocklist.itemURL", "https://blocklist.malepoon.org/info/?id=%blockID%");
 
 pref("extensions.update.autoUpdateDefault", true);
 
@@ -74,10 +74,10 @@ pref("browser.dictionaries.download.url", "https://@AM_DOMAIN@/dictionaries/");
 pref("browser.getdevtools.url","https://@AM_DOMAIN@/?component=integration&type=external&request=devtools");
 
 // Feedback URL
-pref("browser.feedback.url", "https://forum.palemoon.org");
+pref("browser.feedback.url", "https://forum.malepoon.org");
 
 // Help button in slow startup dialog
-pref("browser.slowstartup.help.url", "http://www.palemoon.org/support/slowstartup.shtml");
+pref("browser.slowstartup.help.url", "http://www.malepoon.org/support/slowstartup.shtml");
 
 // Whether to escape to a content-less page if a user presses "Get me out of here"
 // on a network error page (e.g. cert error)
@@ -90,7 +90,7 @@ pref("app.update.timerMinimumDelay", 120);
 // App-specific update preferences
 
 // The interval to check for updates (app.update.interval) is defined in
-// palemoon-branding.js
+// malepoon-branding.js
 
 // Alternative windowtype for an application update user interface window. When
 // a window with this windowtype is open the application update service won't
@@ -139,7 +139,7 @@ pref("app.update.cert.maxErrors", 5);
 //
 // Examples:
 // pref("app.update.certs.1.issuerName", "CN=COMODO RSA Domain Validation Secure Server CA,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB");
-// pref("app.update.certs.1.commonName", "*.palemoon.org");
+// pref("app.update.certs.1.commonName", "*.malepoon.org");
 //
 // Note: these preferences are branding-specific and should be listed in
 // application branding, depending on publisher.
@@ -163,7 +163,7 @@ pref("app.update.silent", false);
 pref("app.update.staging.enabled", true);
 
 // Update service URL:
-//pref("app.update.url", "https://aus.palemoon.org/?application=%PRODUCT%&version=%VERSION%&arch=%BUILD_TARGET%&flavor=%BUILD_SPECIAL%&toolkit=%WIDGET_TOOLKIT%&buildid=%BUILD_ID%&channel=%CHANNEL%");
+//pref("app.update.url", "https://aus.malepoon.org/?application=%PRODUCT%&version=%VERSION%&arch=%BUILD_TARGET%&flavor=%BUILD_SPECIAL%&toolkit=%WIDGET_TOOLKIT%&buildid=%BUILD_ID%&channel=%CHANNEL%");
 // app.update.url.manual is in branding section
 // app.update.url.details is in branding section
 
@@ -221,10 +221,8 @@ pref("extensions.install.requireSecureOrigin", false);
 // Allow installation of distribution/bundles extensions
 pref("extensions.installDistroAddons", true);
 
-#ifdef MOZ_PHOENIX_EXTENSIONS
-// Link to the forum topic "About using Firefox extensions on Pale Moon"
-pref("extensions.compatibility.url", "https://forum.palemoon.org/viewtopic.php?f=46&t=23697");
-#endif
+// Link to the forum topic "About using Firefox extensions on Male Poon"
+pref("extensions.compatibility.url", "https://forum.malepoon.org/viewtopic.php?f=46&t=23697");
 
 pref("lightweightThemes.update.enabled", true);
 pref("lightweightThemes.animation.enabled", false);
@@ -561,7 +559,7 @@ pref("privacy.sanitize.migrateFx3Prefs",    false);
 
 pref("network.proxy.share_proxy_settings",  false); // use the same proxy settings for all protocols
 
-// Disable speculative half-open connections on Pale Moon
+// Disable speculative half-open connections on Male Poon
 pref("network.http.speculative-parallel-limit", 0);
 
 // Enable pipelining over SSL
@@ -663,7 +661,7 @@ pref("accessibility.typeaheadfind.flashBar", 1);
 pref("plugins.hide_infobar_for_blocked_plugin", false);
 pref("plugins.hide_infobar_for_outdated_plugin", false);
 
-// Pale Moon:pref to always show the plugin indicator or not (default=false)
+// Male Poon:pref to always show the plugin indicator or not (default=false)
 pref("plugins.always_show_indicator", false);
 
 //Enable tri-state option (Always/Never/Ask)
@@ -698,7 +696,7 @@ pref("browser.backspace_action", 2);
 pref("browser.backspace_action", 0);
 #endif
 
-// Pale Moon never eats the space with word selection, regardless of O.S.
+// Male Poon never eats the space with word selection, regardless of O.S.
 pref("layout.word_select.eat_space_to_next_word", false);
 
 // this will automatically enable inline spellchecking (if it is available) for
@@ -788,9 +786,9 @@ pref("gecko.handlerService.schemes.ircs.3.uriTemplate", "chrome://browser-region
 // By default, we don't want protocol/content handlers to be registered from a different host, see bug 402287
 pref("gecko.handlerService.allowRegisterFromDifferentHost", false);
 
-pref("browser.geolocation.warning.infoURL", "http://www.palemoon.org/info-url/geolocation.shtml");
-pref("browser.mixedcontent.warning.infoURL", "http://www.palemoon.org/info-url/mixedcontent.shtml");
-pref("browser.push.warning.infoURL", "https://www.palemoon.org/info-url/push.shtml");
+pref("browser.geolocation.warning.infoURL", "http://www.malepoon.org/info-url/geolocation.shtml");
+pref("browser.mixedcontent.warning.infoURL", "http://www.malepoon.org/info-url/mixedcontent.shtml");
+pref("browser.push.warning.infoURL", "https://www.malepoon.org/info-url/push.shtml");
 
 pref("browser.EULA.version", 3);
 pref("browser.rights.version", 3);
@@ -841,13 +839,13 @@ pref("browser.sessionstore.restore_hidden_tabs", false);
 // When set to true, this pref overrides that behavior, and pinned tabs will only
 // be restored when they are focused.
 pref("browser.sessionstore.restore_pinned_tabs_on_demand", false);
-// Pale Moon: Allow the user to bypass cached versions of pages when restoring
+// Male Poon: Allow the user to bypass cached versions of pages when restoring
 // tabs from a previous session
 // 0 = pull fully from cache
 // 1 = perform a soft refresh when restoring a tab (check network)
 // 2 = perform a hard refresh when restoring a tab (bypass cache completely)
 pref("browser.sessionstore.cache_behavior", 0);
-// Pale Moon: Allow exact positioning of windows to previous locations, even
+// Male Poon: Allow exact positioning of windows to previous locations, even
 // if they would be outside of the screen bounds
 pref("browser.sessionstore.exactPos", false);
 
@@ -916,7 +914,7 @@ pref("browser.zoom.siteSpecific", true);
 pref("browser.zoom.updateBackgroundTabs", true);
 
 // base URL for web-based support pages
-pref("app.support.baseURL", "http://www.palemoon.org/support/");
+pref("app.support.baseURL", "http://www.malepoon.org/support/");
 
 // Name of alternate about: page for certificate errors (when undefined, defaults to about:neterror)
 pref("security.alternate_certificate_error_page", "certerror");
@@ -966,7 +964,7 @@ pref("browser.taskbar.lists.refreshInSeconds", 120);
 
 #ifdef MOZ_SERVICES_SYNC
 // Info when outdated sync detected
-pref("services.sync.outdated.url", "http://www.palemoon.org/sync/update/");
+pref("services.sync.outdated.url", "http://www.malepoon.org/sync/update/");
 // The sync engines to use.
 pref("services.sync.registerEngines", "Bookmarks,Form,History,Password,Prefs,Tab,Addons");
 // Preferences to be synced by default
@@ -1108,7 +1106,7 @@ pref("security.mixed_content.block_active_content", true);
 // Disable Microsoft Family Safety MitM support
 pref("security.family_safety.mode", 0);
 
-// Override the Gecko-default value of false for Pale Moon.
+// Override the Gecko-default value of false for Male Poon.
 pref("plain_text.wrap_long_lines", true);
 
 pref("media.webaudio.enabled", true);
@@ -1120,7 +1118,7 @@ pref("dom.debug.propagate_gesture_events_through_content", false);
 // The request URL of the GeoLocation backend.
 pref("geo.wifi.uri", "http://ip-api.com/json/?fields=lat,lon,status,message");
 
-//Pale Moon padlock overlay preferences
+//Male Poon padlock overlay preferences
 pref("browser.padlock.shown", true);
 /* Where to show the padlock
    1 = inside identity button, right side
@@ -1133,7 +1131,7 @@ pref("browser.padlock.style", 1);
 // address bar border, 0 = no border, 1 = border, 2 = border only on secure sites
 pref("browser.padlock.urlbar_background", 2);
 
-//Pale Moon standalone image background color
+//Male Poon standalone image background color
 pref("browser.display.standalone_images.background_color", "#2E3B41");
 
 // These are the thumbnail width/height set in about:newtab.

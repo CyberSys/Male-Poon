@@ -1,8 +1,8 @@
 // ===| General |==============================================================
 
-pref("startup.homepage_welcome_url","http://www.palemoon.org/firstrun.shtml");
+pref("startup.homepage_welcome_url","http://www.malepoon.org/firstrun.shtml");
 
-pref("app.vendorURL", "http://www.palemoon.org/");
+pref("app.vendorURL", "http://www.malepoon.org/");
 
 
 // User Interface
@@ -24,7 +24,7 @@ pref("app.update.promptWaitTime", 172800);
 // ===| Add-ons Manager |======================================================
 
 // Add-on window fixes
-pref("extensions.getMoreThemesURL", "https://addons.palemoon.org/themes/");
+pref("extensions.getMoreThemesURL", "https://addons.malepoon.org/themes/");
 
 pref("extensions.update.autoUpdateDefault", true); // Automatically update extensions by default
 pref("extensions.getAddons.maxResults", 10);
@@ -63,13 +63,13 @@ pref("image.mem.decode_bytes_at_a_time", 65536); //larger chunks
 
 // ===| Sync |=================================================================
 
-// Pale Moon Sync server URLs
-pref("services.sync.serverURL","https://pmsync.palemoon.org/sync/index.php/");
-pref("services.sync.jpake.serverURL","https://keyserver.palemoon.org/");
-pref("services.sync.termsURL", "http://www.palemoon.org/sync/terms.shtml");
-pref("services.sync.privacyURL", "http://www.palemoon.org/sync/privacy.shtml");
-pref("services.sync.statusURL", "https://pmsync.palemoon.org/status/");
-pref("services.sync.syncKeyHelpURL", "http://www.palemoon.org/sync/help/recoverykey.shtml");
+// Male Poon Sync server URLs
+pref("services.sync.serverURL","https://pmsync.malepoon.org/sync/index.php/");
+pref("services.sync.jpake.serverURL","https://keyserver.malepoon.org/");
+pref("services.sync.termsURL", "http://www.malepoon.org/sync/terms.shtml");
+pref("services.sync.privacyURL", "http://www.malepoon.org/sync/privacy.shtml");
+pref("services.sync.statusURL", "https://pmsync.malepoon.org/status/");
+pref("services.sync.syncKeyHelpURL", "http://www.malepoon.org/sync/help/recoverykey.shtml");
 
 pref("services.sync.APILevel", 1); // FSyncMS doesn't support 'info/configuration' requests
 

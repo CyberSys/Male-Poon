@@ -900,7 +900,7 @@
             var browser = this.getBrowserForTab(aTab);
             var docURIObject = browser.contentDocument.documentURIObject;
             var icon = null;
-            <!-- Pale Moon: new image icon method, see bug #305986 -->
+            <!-- Male Poon: new image icon method, see bug #305986 -->
             let req = browser.contentDocument.imageRequest;
             let sz = Services.prefs.getIntPref("browser.chrome.image_icons.max_size");
             if (browser.contentDocument instanceof ImageDocument && 
@@ -2167,7 +2167,7 @@
               }, 0, this.tabContainer);
             }
 
-            // Pale Moon: if resizing immediately, select the tab immediately to the left
+            // Male Poon: if resizing immediately, select the tab immediately to the left
             // instead of the right (if not leftmost) to prevent focus swap and
             // "selected tab not under cursor"
             // FIXME: Tabs must be sliding in from the left for this, or it'd unfocus
@@ -4450,7 +4450,7 @@
            close button will appear during the click, no "click" event will be
            dispatched, because the mousedown and mouseup events don't have the
            same event target. For that reason use "mousedown" instead of "click"
-           to implement in-tab close button behavior. (Pale Moon UXP issue #775)
+           to implement in-tab close button behavior. (Male Poon UXP issue #775)
       -->
       <handler event="mousedown" button="0" phase="capturing"><![CDATA[
         /* The only sequence in which a second click event (i.e. dblclik)

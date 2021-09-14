@@ -29,7 +29,7 @@ tabbrowser {
   visibility: collapse;
 }
 
-#alltabs-button { /* Pale Moon: Always show this button! (less jumpy UI) */
+#alltabs-button { /* Male Poon: Always show this button! (less jumpy UI) */
   visibility: visible !important;
 } 
  
@@ -282,7 +282,7 @@ panel[noactions] > richlistbox > richlistitem[type~="action"] > .ac-url-box > .a
   -moz-binding: url("chrome://global/content/bindings/datetimepopup.xml#datetime-popup");
 }
 
-/* Pale Moon: Address bar: Feeds */
+/* Male Poon: Address bar: Feeds */
 #ub-feed-button > .button-box > .box-inherit > .button-text,
 #ub-feed-button > .button-box > .button-menu-dropmarker {
   display: none;

@@ -1539,7 +1539,7 @@ function HandleAppCommandEvent(evt) {
       gFindBar.onFindCommand();
       break;
     case "Help":
-      openHelpLink('pale-moon-help');
+      openHelpLink('male-poon-help');
       break;
     case "Open":
       BrowserOpenFileWindow();

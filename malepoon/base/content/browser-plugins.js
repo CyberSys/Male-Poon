@@ -237,7 +237,7 @@ var gPluginHandler = {
         break;
 
       case "PluginInstantiated":
-        //Pale Moon: don't show the indicator when plugins are enabled/allowed
+        //Male Poon: don't show the indicator when plugins are enabled/allowed
         if (gPrefService.getBoolPref("plugins.always_show_indicator")) {
           shouldShowNotification = true;
         }
@@ -609,7 +609,7 @@ var gPluginHandler = {
     let contentDoc = aBrowser.contentDocument;
     let cwu = contentWindow.QueryInterface(Ci.nsIInterfaceRequestor)
                            .getInterface(Ci.nsIDOMWindowUtils);
-    // Pale Moon: cwu.plugins may contain non-plugin <object>s, filter them out
+    // Male Poon: cwu.plugins may contain non-plugin <object>s, filter them out
     let plugins = cwu.plugins.filter(function(plugin) {
       return (plugin.getContentTypeForMIMEType(plugin.actualType) ==
               Ci.nsIObjectLoadingContent.TYPE_PLUGIN);

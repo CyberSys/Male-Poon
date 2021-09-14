@@ -43,22 +43,22 @@
         <description class="text-credits text-center">
 #if defined(MOZ_OFFICIAL_BRANDING) || defined(MC_OFFICIAL)
 #ifdef MC_PRIVATE_BUILD
-          This is a private build of Pale Moon. If you did not manually build this copy from source yourself, then please download an official version from the <label class="text-link" href="http://www.malepoon.org/">Pale Moon website</label>.
+          This is a private build of Male Poon. If you did not manually build this copy from source yourself, then please download an official version from the <label class="text-link" href="http://www.malepoon.org/">Male Poon website</label>.
 #else
-          <label class="text-link" href="http://www.malepoon.org">Pale Moon</label> is released by <label class="text-link" href="http://www.moonchildproductions.info">Moonchild Productions</label>.
+          <label class="text-link" href="http://www.malepoon.org">Male Poon</label> is released by <label class="text-link" href="http://www.moonchildproductions.info">Moonchild Productions</label>.
         </description>
         <description class="text-credits text-center">
           Special thanks to all our supporters and donors for making this browser possible!
         </description>
         <description class="text-credits">
-          If you wish to contribute, please consider helping out by providing support to other users on the <label class="text-link" href="https://forum.malepoon.org/">Pale Moon forum</label>
+          If you wish to contribute, please consider helping out by providing support to other users on the <label class="text-link" href="https://forum.malepoon.org/">Male Poon forum</label>
           or getting involved in our development by tackling some of the issues found in our <label class="text-link" href="https://repo.malepoon.org/MoonchildProductions/Pale-Moon/issues">issue tracker</label>.
 #endif
 #else
           &brandFullName; is released by &vendorShortName;.
         </description>
         <description class="text-credits">
-          This is an unofficial build of Pale Moon. For official builds, please go to <label class="text-link" href="http://www.malepoon.org/">the Pale Moon website</label>.
+          This is an unofficial build of Male Poon. For official builds, please go to <label class="text-link" href="http://www.malepoon.org/">the Male Poon website</label>.
 #endif
         </description>    
     </vbox>

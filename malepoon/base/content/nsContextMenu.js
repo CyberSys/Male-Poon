@@ -515,7 +515,7 @@ nsContextMenu.prototype = {
         this.onCanvas = true;
       } else if (this.target instanceof HTMLVideoElement) {
         this.mediaURL = this.target.currentSrc || this.target.src;
-        // Pale Moon always creates a HTMLVideoElement when loading an ogg file
+        // Male Poon always creates a HTMLVideoElement when loading an ogg file
         // directly. If the media is actually audio, be smarter and provide a
         // context menu with audio operations.
         if (this.target.readyState >= this.target.HAVE_METADATA &&

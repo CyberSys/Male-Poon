@@ -213,7 +213,7 @@ var Change = {
         [valid, errorString] = gSyncUtils.validatePassword(this._firstBox, this._secondBox);
     }
     else {
-      //Pale Moon: Enforce minimum length of 8 for allowed custom passphrase
+      //Male Poon: Enforce minimum length of 8 for allowed custom passphrase
       //and don't restrict it to "out of sync" situations only. People who
       //go to this page generally know what they are doing ;)
       valid = this._passphraseBox.value.length >= 8;

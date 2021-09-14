@@ -1,4 +1,4 @@
 ;!@Install@!UTF-8!
-Title="Pale Moon"
+Title="Male Poon"
 RunProgram="setup.exe"
 ;!@InstallEnd@!
