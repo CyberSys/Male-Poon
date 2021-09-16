@@ -237,7 +237,8 @@ pref("general.useragent.compatMode", 0);
 pref("general.useragent.compatMode.gecko", false);
 pref("general.useragent.compatMode.firefox", false);
 
-pref("general.smoothScroll", true);
+// Smooth scrolling is stupid
+pref("general.smoothScroll", false);
 #ifdef UNIX_BUT_NOT_MAC
 pref("general.autoScroll", false);
 #else
