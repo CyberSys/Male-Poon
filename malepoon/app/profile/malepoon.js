@@ -547,14 +547,21 @@ pref("privacy.cpd.offlineApps",             false);
 pref("privacy.cpd.siteSettings",            false);
 pref("privacy.cpd.connectivityData",        false);
 
+// Do not track by default
+pref("privacy.donottrackheader.enabled",true);
+
+// canvas.poisondata provides additional privacy
+pref("canvas.poisondata",true);
+
+
 // What default should we use for the time span in the sanitizer:
 // 0 - Clear everything
 // 1 - Last Hour
 // 2 - Last 2 Hours
 // 3 - Last 4 Hours
 // 4 - Today
-pref("privacy.sanitize.timeSpan", 1);
-pref("privacy.sanitize.sanitizeOnShutdown", false);
+pref("privacy.sanitize.timeSpan", 0);
+pref("privacy.sanitize.sanitizeOnShutdown", true);
 
 pref("privacy.sanitize.migrateFx3Prefs",    false);
 
@@ -578,6 +585,9 @@ pref("network.dnsCacheEntries", 800);
 pref("network.dnsCacheExpiration", 180);            // 3 minutes if no TTL given by DNS resolver
 pref("network.dns.get-ttl", true);                  // Get and use DNS resolver TTL
 pref("network.dnsCacheExpirationGracePeriod", 60);  // 1 minute grace period for stale entry
+
+// Disable third party cookies by default
+pref("network.cookie.cookieBehavior",3);
 
 // simple gestures support
 pref("browser.gesture.swipe.left", "Browser:BackOrBackDuplicate");
@@ -1175,7 +1185,7 @@ pref("status4evar.download.notify.timeout", 60);
 pref("status4evar.download.progress", 1);
 pref("status4evar.download.tooltip", 2);
 
-pref("status4evar.firstRun", true);
+pref("status4evar.firstRun", false);
 
 pref("status4evar.progress.toolbar.css", "#333399");
 pref("status4evar.progress.toolbar.force", false);
