@@ -13,6 +13,11 @@ Note: I have removed all proprietary Pale Moon branding. As such, this repositor
 * Branding changed from Pale Moon to Male Poon. kek.
 * Restore dual GUID system/Firefox addons support
 * Revert removal of ability to set extension update background URL (in case someone else starts their own addon site)
+* Restore support for system libvpx
+* Restore support for system sqlite (I don't recommend using this.)
+* Restore support for system NSPR/NSS
+* Restore support for system ICU (this breaks on newer ICU versions)
+* Removal of Tobin's precious directive 4 (you can use official branding and system libs at the same time now)
 
 ## FAQ
 * Doesn't this violate Moonchild Productions' branding and copyrights?
