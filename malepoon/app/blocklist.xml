@@ -2468,12 +2468,12 @@ xmlns="http://www.mozilla.org/2006/addons-blocklist">
       </versionRange>
       <prefs></prefs>
     </emItem>
-    <emItem blockID="pm103" id="statusbar@malepoon.org">
+    <emItem blockID="pm103" id="statusbar@palemoon.org">
       <versionRange minVersion="0" maxVersion="*" severity="3">
       </versionRange>
       <prefs></prefs>
     </emItem>
-    <emItem blockID="pm104" id="ext-promises@malepoon.org">
+    <emItem blockID="pm104" id="ext-promises@palemoon.org">
       <versionRange minVersion="0" maxVersion="*" severity="3">
       </versionRange>
       <prefs></prefs>

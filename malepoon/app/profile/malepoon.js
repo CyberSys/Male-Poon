@@ -35,7 +35,7 @@ pref("extensions.strictCompatibility", false);
 // for it to be compatible by default.
 pref("extensions.minCompatibleAppVersion", "1.5");
 
-#define AM_DOMAIN addons.malepoon.org
+#define AM_DOMAIN addons.palemoon.org
 #define AM_AUS_ARGS reqVersion=%REQ_VERSION%&id=%ITEM_ID%&version=%ITEM_VERSION%&maxAppVersion=%ITEM_MAXAPPVERSION%&status=%ITEM_STATUS%&appID=%APP_ID%&appVersion=%APP_VERSION%&appOS=%APP_OS%&appABI=%APP_ABI%&locale=%APP_LOCALE%&currentAppVersion=%CURRENT_APP_VERSION%&updateType=%UPDATE_TYPE%&compatMode=%COMPATIBILITY_MODE%
 
 // Preferences for AMO integration
@@ -57,9 +57,9 @@ pref("extensions.blocklist.level.updated", false);
 // Controls what level the blocklist switches from warning about items to forcibly
 // blocking them.
 pref("extensions.blocklist.level", 1);
-pref("extensions.blocklist.url", "https://blocklist.malepoon.org/?version=%VERSION%");
-pref("extensions.blocklist.detailsURL", "https://blocklist.malepoon.org/about.shtml");
-pref("extensions.blocklist.itemURL", "https://blocklist.malepoon.org/info/?id=%blockID%");
+pref("extensions.blocklist.url", "https://blocklist.palemoon.org/?version=%VERSION%");
+pref("extensions.blocklist.detailsURL", "https://blocklist.palemoon.org/about.shtml");
+pref("extensions.blocklist.itemURL", "https://blocklist.palemoon.org/info/?id=%blockID%");
 
 pref("extensions.update.autoUpdateDefault", true);
 
@@ -74,10 +74,10 @@ pref("browser.dictionaries.download.url", "https://@AM_DOMAIN@/dictionaries/");
 pref("browser.getdevtools.url","https://@AM_DOMAIN@/?component=integration&type=external&request=devtools");
 
 // Feedback URL
-pref("browser.feedback.url", "https://forum.malepoon.org");
+pref("browser.feedback.url", "https://github.com/ManchildProductions/Male-Poon/issues");
 
 // Help button in slow startup dialog
-pref("browser.slowstartup.help.url", "http://www.malepoon.org/support/slowstartup.shtml");
+pref("browser.slowstartup.help.url", "http://www.palemoon.org/support/slowstartup.shtml");
 
 // Whether to escape to a content-less page if a user presses "Get me out of here"
 // on a network error page (e.g. cert error)
@@ -222,7 +222,7 @@ pref("extensions.install.requireSecureOrigin", false);
 pref("extensions.installDistroAddons", true);
 
 // Link to the forum topic "About using Firefox extensions on Male Poon"
-pref("extensions.compatibility.url", "https://forum.malepoon.org/viewtopic.php?f=46&t=23697");
+pref("extensions.compatibility.url", "about:mozilla");
 
 pref("lightweightThemes.update.enabled", true);
 pref("lightweightThemes.animation.enabled", false);
@@ -786,9 +786,9 @@ pref("gecko.handlerService.schemes.ircs.3.uriTemplate", "chrome://browser-region
 // By default, we don't want protocol/content handlers to be registered from a different host, see bug 402287
 pref("gecko.handlerService.allowRegisterFromDifferentHost", false);
 
-pref("browser.geolocation.warning.infoURL", "http://www.malepoon.org/info-url/geolocation.shtml");
-pref("browser.mixedcontent.warning.infoURL", "http://www.malepoon.org/info-url/mixedcontent.shtml");
-pref("browser.push.warning.infoURL", "https://www.malepoon.org/info-url/push.shtml");
+pref("browser.geolocation.warning.infoURL", "http://www.palemoon.org/info-url/geolocation.shtml");
+pref("browser.mixedcontent.warning.infoURL", "http://www.palemoon.org/info-url/mixedcontent.shtml");
+pref("browser.push.warning.infoURL", "https://www.palemoon.org/info-url/push.shtml");
 
 pref("browser.EULA.version", 3);
 pref("browser.rights.version", 3);
@@ -914,7 +914,7 @@ pref("browser.zoom.siteSpecific", true);
 pref("browser.zoom.updateBackgroundTabs", true);
 
 // base URL for web-based support pages
-pref("app.support.baseURL", "http://www.malepoon.org/support/");
+pref("app.support.baseURL", "https://github.com/ManchildProductions/Male-Poon/issues");
 
 // Name of alternate about: page for certificate errors (when undefined, defaults to about:neterror)
 pref("security.alternate_certificate_error_page", "certerror");
@@ -964,7 +964,7 @@ pref("browser.taskbar.lists.refreshInSeconds", 120);
 
 #ifdef MOZ_SERVICES_SYNC
 // Info when outdated sync detected
-pref("services.sync.outdated.url", "http://www.malepoon.org/sync/update/");
+pref("services.sync.outdated.url", "http://www.palemoon.org/sync/update/");
 // The sync engines to use.
 pref("services.sync.registerEngines", "Bookmarks,Form,History,Password,Prefs,Tab,Addons");
 // Preferences to be synced by default
