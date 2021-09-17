@@ -1,0 +1,55 @@
+name: linux
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: ${{ matrix.config.name }}
+    runs-on: ubuntu-latest
+    env:
+      SHELL: bash
+      GTK: ${{ matrix.config.gtk }}
+      CC: ccache gcc
+      CXX: ccache g++
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+        - name: Ubuntu-GTK3
+          gtk: GTK3
+        - name: Ubuntu-GTK2
+          gtk: GTK2
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Dependencies
+      run: |
+        exec bash "scripts/dependencies.sh"
+    
+    - name: Configure
+      run: |
+        exec bash "scripts/configure.sh"
+
+    - name: "Set up compiler cache"
+      uses: actions/cache@v2
+      with:
+        path: "~/.ccache"
+        key: ${{ matrix.config.os }}-${{ matrix.config.gtk }}-${{ github.head_ref }}-${{ github.run_number }}
+        restore-keys: |
+          ${{ matrix.config.os }}-${{ matrix.config.gtk }}-${{ github.head_ref }}-
+
+    - name: Build
+      run: |
+        exec bash "scripts/build.sh"
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Male-Poon_${{matrix.config.name}}
+        path: |
+          obj-x86_64-pc-linux-gnu/dist/malepoon-*
+          LICENSE
+        if-no-files-found: error
+    

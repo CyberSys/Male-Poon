@@ -1,0 +1,58 @@
+name: windows
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: ${{ matrix.config.name }}
+    runs-on: windows-latest
+    env:
+      WIN: ${{ matrix.config.win }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+        - name: Windows-Win64
+          win: WIN64
+          arch: amd64
+
+        - name: Windows-Win32
+          win: WIN32
+          arch: x86
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: "MSVC Developer Command Prompt"
+      uses: seanmiddleditch/gha-setup-vsdevenv@v3
+      with:
+        arch: ${{ matrix.config.arch }}
+
+
+    - name: Dependencies
+      run: |
+        Invoke-WebRequest -Uri https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-2.2.0.exe -OutFile MozillaBuildSetup-2.2.0.exe
+        ./scripts/InstallMozillaBuild.ps1
+      shell: pwsh
+    
+    - name: Configure
+      run: |
+        scripts/configure.sh
+      shell: bash
+
+    - name: Build
+      run: |
+        scripts/build.sh
+      shell: bash
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Male-Poon_${{matrix.config.name}}
+        path: |
+          obj-*/dist/malepoon-*
+          LICENSE
+        if-no-files-found: error
+    
