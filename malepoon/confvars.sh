@@ -42,6 +42,7 @@ MC_PALEMOON=1
 # Enables conditional code in the platform for historically
 # Firefox-like browsers
 MOZ_PHOENIX=1
+MOZ_PHOENIX_EXTENSIONS=1
 
 # Lightweight Themes
 MOZ_PERSONAS=1
