@@ -22,12 +22,23 @@ Note: I have removed all proprietary Pale Moon branding. As such, this repositor
 ## FAQ
 * Doesn't this violate Moonchild Productions' branding and copyrights?
     * No. Moonchild Productions owns (but has not legally registered) the copyright for Moonchild Productions and Pale Moon. He does not own the copyright for Male Poon, nor the copyright for ManchildProductions. On the Pale Moon forum Tobin claims that the blood moon logo cannot be used, even in goatse form. I am not using the blood moon logo from the Pale Moon repo. I am using a different picture of a blood moon pulled off of Google Images that is completely unrelated to their blood moon logo/branding. The font they used for the Pale Moon logo allows free commercial use. As such, I am not in violation of any branding. I'd be happy to take them to court to prove otherwise. I have the time and money to do so.
-* Tobin seems to think you are someone named djames/Daniel James. Are you?
-    * No. I have never met this person. My real name is Johann.
+* Tobin seems to think you are someone he knows. Are you?
+    * No. I have never met the person Tobin is referring to. My real name is Johann.
+* Will you be providing binaries?
+    * NO! I will not provide binaries for any reason whatsoever. I would like to avoid a repeat of the MyPal situation. You are free to distribute binaries to anyone for any reason you wish. If you would like to be mentioned in the README as an official source for binaries, please contact me via GitHub issue and prove that your binaries are legitimate and safe (AKA prove they're not viruses).
+* Where should we look if your GitHub profile gets banned due to false GitHub reports from people on the Pale Moon forums?
+    * If this happens I will create a thread on 4chan's /g/ board with info on the new Git host and repo. Ideally this would not happen as I am not violating any GitHub policies that I am aware of.
+* Will you provide any sort of Linux package?
+    * I won't be providing any package for binary distros. I probably will create a Gentoo package. Since I'm not using Pale Moon's branding I'm not subject to the retarded Pale Moon redistribution policies.
+
+
+## Code of Conduct
+* This project is maintained under the Geek Feminism code of conduct, after you copy and paste it into notepad and then clear the entire document. In other words, there is no code of cuckduct.
+* In addition to the previous point, by using and/or contributing to this software, you agree not to open GitHub issues for bullshit licensing violations or any other autistic reasons.
 
 ## Credits:
 * MoonchildProductions for the wonderful Pale Moon Browser and UXP platform.
-* Credits also go to Pale Moon and UXP contributors for the same as above.
+* Credits also go to Pale Moon and UXP contributors for the same reason as above.
 * Palemoon.org forum users for continuing to report my profile. GitHub support has notified me that they will take note of the abuse of the GitHub reports feature and will act accordingly.
 * mattatobin for continuing to complain about GitHub forks he doesn't like.
 
