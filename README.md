@@ -7,7 +7,7 @@ laid out in a "comm-central" style configuration where only the code specific to
 
 The shared Unified XUL Platform-Fixed source code is referenced here as a git submodule contained in the `platform/` directory and is required to build the application.
 
-Note: I have removed all proprietary Pale Moon branding. As such, this repository does not violate any copyrights imposed by Moonchild Productions. Any copyright claims submitted against this repo are false. In addition, the rights to the MPL licensed Pale Moon code cannot be revoked from me like they were from MyPal as I'm not distributing any binaries.
+Note: I have removed all proprietary Pale Moon branding. As such, this repository does not violate any copyrights imposed by Moonchild Productions. Any copyright claims submitted against this repo are false. In addition, the rights to the MPL licensed Pale Moon code cannot be revoked from me as it is very clear which commit corresponds to each Linux binary.
 
 ## Changes compared to Pale Moon:
 * Branding changed from Pale Moon to Male Poon. kek.
@@ -22,15 +22,12 @@ Note: I have removed all proprietary Pale Moon branding. As such, this repositor
 ## FAQ
 * Doesn't this violate Moonchild Productions' branding and copyrights?
     * No. Moonchild Productions owns (but has not legally registered) the copyright for Moonchild Productions and Pale Moon. He does not own the copyright for Male Poon, nor the copyright for ManchildProductions. On the Pale Moon forum Tobin claims that the blood moon logo cannot be used, even in goatse form. I am not using the blood moon logo from the Pale Moon repo. I am using a different picture of a blood moon pulled off of Google Images that is completely unrelated to their blood moon logo/branding. The font they used for the Pale Moon logo allows free commercial use. As such, I am not in violation of any branding. I'd be happy to take them to court to prove otherwise. I have the time and money to do so.
-* Tobin seems to think you are someone he knows. Are you?
-    * No. I have never met the person Tobin is referring to. My real name is Johann.
 * Will you be providing binaries?
-    * NO! I will not provide binaries for any reason whatsoever. I would like to avoid a repeat of the MyPal situation. You are free to distribute binaries to anyone for any reason you wish. If you would like to be mentioned in the README as an official source for binaries, please contact me via GitHub issue and prove that your binaries are legitimate and safe (AKA prove they're not viruses).
+    * There are Linux binaries under the Actions tab. I don't have any experience compiling software for Windows unfortunately. There is a GitHub Action for Windows but it is currently broken.
 * Where should we look if your GitHub profile gets banned due to false GitHub reports from people on the Pale Moon forums?
     * If this happens I will create a thread on 4chan's /g/ board with info on the new Git host and repo. Ideally this would not happen as I am not violating any GitHub policies that I am aware of.
 * Will you provide any sort of Linux package?
-    * I won't be providing any package for binary distros. I probably will create a Gentoo package. Since I'm not using Pale Moon's branding I'm not subject to the retarded Pale Moon redistribution policies.
-
+    * I won't be providing any package for any binary distros. I probably will create a Gentoo package. Since I'm not using Pale Moon's branding I'm not subject to the retarded Pale Moon redistribution policies. If you want a binary use the ones in the Actions tab. They are compiled in a distro-agnostic way so they should work as long as your distro has a recent glibc.
 
 ## Code of Conduct
 * This project is maintained under the Geek Feminism code of conduct, after you copy and paste it into notepad and then clear the entire document. In other words, there is no code of cuckduct.
