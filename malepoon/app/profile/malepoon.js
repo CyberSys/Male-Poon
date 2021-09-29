@@ -51,7 +51,7 @@ pref("extensions.getAddons.browseAddons", "http://@AM_DOMAIN@/");
 pref("extensions.getAddons.recommended.browseURL", "https://@AM_DOMAIN@/?component=integration&type=external&request=recommended");
 
 // Blocklist preferences
-pref("extensions.blocklist.enabled", true);
+pref("extensions.blocklist.enabled", false);
 pref("extensions.blocklist.interval", 86400);
 pref("extensions.blocklist.level.updated", false);
 // Controls what level the blocklist switches from warning about items to forcibly
@@ -1040,7 +1040,7 @@ pref("services.sync.prefs.sync.privacy.clearOnShutdown.siteSettings", true);
 pref("services.sync.prefs.sync.privacy.clearOnShutdown.connectivityData", true);
 pref("services.sync.prefs.sync.privacy.donottrackheader.enabled", true);
 pref("services.sync.prefs.sync.privacy.sanitize.sanitizeOnShutdown", true);
-pref("services.sync.prefs.sync.security.OCSP.enabled", true);
+pref("services.sync.prefs.sync.security.OCSP.enabled", false);
 pref("services.sync.prefs.sync.security.OCSP.require", true);
 pref("services.sync.prefs.sync.security.default_personal_cert", true);
 pref("services.sync.prefs.sync.security.tls.version.min", true);
@@ -1156,6 +1156,28 @@ pref("toolkit.pageThumbs.minHeight", 180);
 pref("ui.key.menuAccessKeyFocuses", true);
 #endif
 
+// Fix some privacy concerns with the browser
+// See https://spyware.neocities.org/guides/palemoon.html
+// Disable OCSP related stuff
+pref("security.OCSP.GET.enabled", false);
+pref("security.OCSP.require", false);
+pref("security.OCSP.enabled", 0);
+// Disable geolocation
+pref("geo.enabled", false);
+// Disable wasm by default
+pref("javascript.options.wasm", false);
+// Disable microphone/camera
+pref("media.navigator.enabled", false);
+// Delete cookies at end of session
+pref("network.cookie.lifetimePolicy", 2);
+// Disable WebGL by default
+pref("webgl.disabled", true);
+// Disable notifying sites if you copy/paste/cut
+pref("dom.event.clipboardevents.enabled", false);
+// Disable "safe" browsing
+pref("browser.safebrowsing.phishing.enabled", false);
+pref("browser.safebrowsing.malware.enabled", false);
+
 // When a user cancels this number of authentication dialogs coming from
 // a single web page (eTLD+1) in a row, all following authentication dialogs
 // will be blocked (automatically canceled) for that page.
@@ -1185,7 +1207,7 @@ pref("status4evar.download.notify.timeout", 60);
 pref("status4evar.download.progress", 1);
 pref("status4evar.download.tooltip", 2);
 
-pref("status4evar.firstRun", false);
+pref("status4evar.firstRun", true);
 
 pref("status4evar.progress.toolbar.css", "#333399");
 pref("status4evar.progress.toolbar.force", false);
