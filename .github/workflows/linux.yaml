@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: ${{ matrix.config.name }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     env:
       SHELL: bash
       GTK: ${{ matrix.config.gtk }}
