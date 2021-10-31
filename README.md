@@ -39,6 +39,8 @@ Note: I have removed all proprietary Pale Moon branding. As such, this repositor
 * Credits also go to Pale Moon and UXP contributors for the same reason as above.
 * Palemoon.org forum users for continuing to report my profile. GitHub support has notified me that they will take note of the abuse of the GitHub reports feature and will act accordingly.
 * mattatobin for continuing to complain about GitHub forks he doesn't like.
+* ManchildProductions for creating this excellent fork.
+* Everyone who continues to fork and share this browser.
 
 ## Getting the platform sub-module
 `git submodule init && git submodule update`
