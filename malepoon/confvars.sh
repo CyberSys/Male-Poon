@@ -6,7 +6,7 @@
 # Application Basename and Vendor
 # MOZ_APP_BASENAME and MOZ_APP_VENDOR must not have spaces.
 # These values where appropriate are hardcoded in application.ini
-# to "Male Poon" and "Moonchild Productions" respectively for
+# to "Male Poon" and "Manchild Productions" respectively for
 # Male Poon
 MOZ_APP_BASENAME=Malepoon
 MOZ_APP_VENDOR=ManchildProductions
