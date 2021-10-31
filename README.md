@@ -29,6 +29,9 @@ Note: I have removed all proprietary Pale Moon branding. As such, this repositor
     * If this happens I will create a thread on 4chan's /g/ board with info on the new Git host and repo. Ideally this would not happen as I am not violating any GitHub policies that I am aware of.
 * Will you provide any sort of Linux package?
     * I won't be providing any package for any binary distros. I probably will create a Gentoo package. Since I'm not using Pale Moon's branding I'm not subject to the retarded Pale Moon redistribution policies. If you want a binary use the ones in the Actions tab. They are compiled in a distro-agnostic way so they should work as long as your distro has a recent glibc.
+* I don't like the name... or the logo.
+	* Someone has made a fork with a different name, go for it. [Orbit Navigator](https://gitlab.com/citizensixtynine/orbit)
+
 
 ## Code of Conduct
 * This project is maintained under the Geek Feminism code of conduct, after you copy and paste it into notepad and then clear the entire document. In other words, there is no code of cuckduct.
